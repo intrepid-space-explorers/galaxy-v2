@@ -1,0 +1,105 @@
+html,
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: azure;
+}
+
+#container{
+  min-height: 100%;
+  position: relative;
+}
+
+#header{
+  padding: 10px;
+}
+
+#body{
+  padding: 10px;
+  padding-bottom: 60%;
+}
+.morgana>li{
+  width: 40%;
+  display: inline-block;
+}
+  #morgana_img:hover{
+    cursor: pointer;
+  }
+  .kris>li{
+    width: 40%;
+    display: inline-block;
+  }
+  #kris_img:hover{
+  cursor: pointer;
+  }
+  .jon>li{
+    width: 40%;
+    display: inline-block;
+  }
+
+  #jon_img:hover{
+  cursor: pointer;
+  }
+  .robert>li{
+    width: 40%;
+    display: inline-block;
+  }
+
+  #robert_img:hover{
+  cursor: pointer;
+  }
+
+  p{
+    float: left;
+    padding: 0 20px 20px 0;
+    white-space: normal;
+    text-overflow: clip;
+    clear: both;
+    overflow-wrap: normal;
+    font-size: 20px;
+    font-family: 'Slabo 27px', serif;
+  }
+
+  ul{
+    padding: 2cm;
+
+
+  }
+
+#footer{
+  position: absolute;
+  bottom: -1600px;
+  width: 100%;
+  height: 60px;
+}
+.index_button{
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10%;;
+  border-radius: 10px;
+  float: right;
+  margin-top: 10%;
+  margin-right: 3%;
+  display: block;
+}
+
+
+div.title{
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 33%;
+  font-family: 'Slabo 27px', serif;
+  color: gold;
+}
+
+.author_image{
+  margin-left: 30%;
+}
+.bold{
+  font-weight: bold;
+}
+.author_box{
+  margin-bottom: 4%;
+}

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: gold;
+}
+
+div {
+    position: relative;
+    width: 50%;
+    background-color: rgb(56, 56, 56);
+    border: 3px ridge rgb(25, 93, 156);
+    border-radius: 10px;
+}
+
+div:not(#status_bar) {
+    max-width: 600px;
+}
+
+#data_div {
+    min-height: 350px;
+}
+
+div>div {
+    width: fit-content;
+    display: inline-block;
+    border: none;
+    width: 45%;
+    font-family: 'Roboto', sans-serif;
+}
+
+div>img {
+    background-color: black;
+    width: 100%;
+    max-width: 250px;
+    margin: 5px;
+}
+
+ul:not(#status_bar>ul) {
+    margin: 10px;
+    width: 100%;
+    padding-left: 5px;
+    max-width: 250px;
+    word-wrap: normal;
+}
+
+li {
+    margin-bottom: 2px;
+    width: fit-content;
+    word-wrap: normal;
+    padding: 0 0 0 5px;
+}
+
+button {
+    color: black;
+    width: fit-content;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 1px 3px;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+#planet_div {
+    width: 55%;
+    float: right;
+    text-align: center;
+    padding-right: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.planet {
+    width: 32%;
+    margin: auto;
+}
+
+.planet>img {
+    height: 100%;
+    max-width: 100px;
+    margin-bottom: -2px;
+}
+
+.planet>ul {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.life {
+    border: 3px solid green;
+}
+
+.intel {
+    border: 3px solid blue;
+}
+
+#status_bar {
+    background-color: rgb(56, 56, 56);
+    border: 3px ridge rgb(25, 93, 156);
+    border-radius: 10px;
+    width: 50%;
+    height: 80px;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#status_bar>ul {
+    width: 80%;
+    display: inline-block;
+}
+
+#status_bar li {
+    margin: 5px auto;
+    font-size: 0.8em;
+    padding: 2px;
+}
+
+#status_bar button {
+    float: right;
+    margin-top: 23px;
+    margin-right: 20px;
+    padding: 2px 5px;
+    font-size: 16px;
+}

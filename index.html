@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Font Link -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <script src="./js/random_background.js"></script> -->
+    <title>Searching the Cosmos</title>
+</head>
+
+
+<!-- stretch goal: add a different background everytime load page-->
+
+<body background="assets\background_pictures\stars1.png">
+
+  <div class="indexTitle">
+    <h1>Searching the Cosmos...</h1>
+    <h2>What will you find?</h2>
+  </div>
+
+  <div class="">
+
+    <div class="indexInstructions">
+      <p>Our universe is an amazing place full of amazing things.&nbsp; Stars and planets surround us, Earth is just one small world in a great, vast cosmos.&nbsp; Out latest estimates are that the Milky Way galaxy contains between 200 and 400 billion stars, most of which probably also have planets, and there are at least 100 billion galaxies in the universe.&nbsp; Are we alone in the universe?&nbsp; Are we the only people looking up at the night sky and wondering if anyone else is out there?</p>
+      <p>The answer to that question is almost definitely, "No!"</p>
+      <p>There is someone out there wondering about us too.</p>
+      <p>This program is a model to help demonstrate the rarity (or not) of life evolving around other stars.</p>
+    </div>
+
+    <div class="right_side_box">
+      <div class="indexRules">
+        <h3>Instructions</h3>
+          <ul>
+            <li>1. Enter how many stars you want in the sector you wish to explore.</li>
+            <li>2. Enter your desired percentage chance of life developing on planets.</li>
+            <li>3. Enter your desired percentage chance of that life becoming intelligent.</li>
+            <li>4. Press the "Explore!" button to explore the galaxy!</li>
+            <li>5. Click on a star and see what you can uncover.</li>
+          </ul>
+      </div>
+
+      <section>
+        <form id= "star_data_form" class="star_input_data_box" action="./pages/galaxy.html">
+
+          <div class="star_input_element number_of_stars">
+            <label for="number_of_stars">
+
+                <input id="number_of_stars" class="input_area" type="number" min="1" max="500" required = "required" placeholder="1-500">
+                # of stars in search sector
+            </label>
+                    </div>
+
+                    <div class="star_input_element perent_life_possible">
+                        <label for="%of_pos_life_on_planet">
+              <input id="%of_pos_life_on_planet" class="input_area" type="number" min="1" max="100" placeholder="1-100">
+              % chance of possible life on planet
+            </label>
+                    </div>
+
+                    <div class="star_input_element perent_intelligent_life_possible">
+                        <label for="%of_intelligent_life">
+              <input id="%of_intelligent_life" class="input_area" type="number" min="1" max="100" placeholder="1-100">
+              % chance of that life becoming intelligent
+            </label>
+                    </div>
+
+                    <input class="star_input_element submit_button" type="submit" id="submit_button" value="Explore!">
+                </form>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="author_button_container">
+        <a href='./pages/authors.html'>
+            <button class="author_button">About Authors</button>
+        </a>
+    </div>
+    <div id='galaxy_3d_container'>
+        <a href='./pages/galaxy_3d.html'>
+            <button class="galaxy_button" id='galaxy_3d'>3D Galaxy Beta</button>
+        </a>
+    </div>
+
+    <script src="./js/app.js"></script>
+    </bo onkeyup="" dy>
+
+</html>
