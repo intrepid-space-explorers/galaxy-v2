@@ -1,1 +1,1 @@
-# galaxy-v2
+# Galaxy v.2
