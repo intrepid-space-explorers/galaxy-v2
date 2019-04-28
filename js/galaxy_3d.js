@@ -137,7 +137,7 @@ Star.prototype.generate_planets = function() {
     //select random planet type
     var chance = Math.floor(Math.random() * planet_type_distribution.length);
     var p_type = planet_type_distribution[chance];
-    new_planet = planet_types[p_type];
+    new_planet = new Planet(planet_types[p_type][0], planet_types[p_type][1], planet_types[p_type][2], planet_types[p_type][3]);
     new_planet.set_life_or_not();
     planet_array.push(new_planet);
   }
@@ -247,6 +247,7 @@ console.log(star_field);
 // Rendering
 //======================================
 var canvas = document.getElementById('star_field_canvas');
+console.log(canvas);
 canvas.setAttribute('height', window.innerHeight);
 canvas.setAttribute('width', window.innerWidth);
 
